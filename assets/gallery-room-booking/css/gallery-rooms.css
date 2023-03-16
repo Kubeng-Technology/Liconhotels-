@@ -115,11 +115,12 @@ header#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 80px;
+  gap: 0px;
   align-items: center;
   margin-bottom: 150px;
   text-align: center;
   position: relative;
+  background-color: red;
 }
 
 .gallery-header-wrapper {
