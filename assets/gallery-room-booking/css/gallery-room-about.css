@@ -90,8 +90,8 @@ section.licon-logo-and-name > a:hover {
 	color: var(--primary-text-light);
 	background: var(--black);
 	padding: 15px;
-	font-size: 1.3rem;
-	width: 200px;
+	font-size: 1rem;
+	width: fit-content;
 	border: 1px solid transparent;
 	transition: .5s ease-in-out;
 }
