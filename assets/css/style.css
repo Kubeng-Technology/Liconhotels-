@@ -201,7 +201,7 @@ nav#hamburger > .second-stick.active {
 .second-stick,
 .third-stick {
   width: 30px;
-  padding: 1px;
+  padding: 2px;
   background-color: var(--primary-text-light);
   transition: 500ms ease-in-out;
 }

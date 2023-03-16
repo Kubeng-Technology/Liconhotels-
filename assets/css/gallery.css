@@ -105,7 +105,7 @@
   padding: 0% 0% 50px 0%;
   transition: .5s ease-in-out;
   margin-bottom: 0px;
-  box-shadow: -1px 1px 5px 0px var(--transparent);
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.241), 1px 0px 5px 0px rgba(0, 0, 0, 0.241);
 }
 
 .standard-room-img, .deluxe-room-img, .presidential-suite-room-img {
