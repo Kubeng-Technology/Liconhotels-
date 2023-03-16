@@ -9,6 +9,10 @@
   --paragraph: "Poppins", sans-serif;
 }
 
+#about-licon {
+	margin-top: 150px;
+}
+
 /*about-licon-wrapper*/
 .about-licon-wrapper {
 	width: 100%;
@@ -73,7 +77,6 @@ section.licon-logo-and-name > a:hover {
 	justify-content: center;
 	align-items: center;
 	background: var(--primary-text-light);
-	position: relative;
 	position: fixed;
 	bottom: 0;
 	left: 0;

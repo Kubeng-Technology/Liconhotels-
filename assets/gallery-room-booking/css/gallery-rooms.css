@@ -117,10 +117,9 @@ header#header {
   justify-content: center;
   gap: 0px;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   text-align: center;
   position: relative;
-  background-color: red;
 }
 
 .gallery-header-wrapper {
@@ -235,17 +234,6 @@ nav#hamburger > .second-stick.active {
 .hamburger-link > nav.hamburger-social-link > a {
   padding: 0px;
   width: 20%;
-}
-
-i.fa-brands {
-  font-weight: 400;
-  font-size: 1.3rem;
-}
-
-/*home design*/
-
-.home-wrapper {
-  padding: 2% 5%;
 }
 
 /*end of home nav design*/
