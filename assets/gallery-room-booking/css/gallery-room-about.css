@@ -97,8 +97,8 @@ section.licon-logo-and-name > a:hover {
 }
 
 .licon-reservation-box > section {
-	width: 70px;
-	padding: 15px;
+	width: 50px;
+	padding: 10px;
 	background-color: var(--black);
 	color: var(--primary-text-light);
 	display: flex;
@@ -118,7 +118,7 @@ section.licon-logo-and-name > a:hover {
 
 .licon-reservation-box > section > a {
 	color: var(--primary-text-light);
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .licon-reservation-box > section:hover  a{
