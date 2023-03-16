@@ -132,6 +132,14 @@
 
 .facility-details > ul > li > p {
   font-size: .85rem;
+  width: 90%;
+}
+
+.facility-details > ul > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
 }
 
 /*amenities design*/
@@ -186,9 +194,17 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0px;
 }
 
 .amenities-details > ul > li > p {
   font-size: .85rem;
+  width: 90%;
+}
+
+.amenities-details > ul > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
 }
