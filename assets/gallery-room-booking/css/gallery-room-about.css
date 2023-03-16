@@ -71,7 +71,6 @@ section.licon-logo-and-name > a:hover {
 /*arrow and reservation design*/
 .licon-reservation-box {
 	width: 100%;
-	height: 100px;
 	padding: 0% 3%;
 	display: flex;
 	justify-content: center;
