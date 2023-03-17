@@ -1,5 +1,6 @@
 @import url(./gallery-room-about.css);
 @import url(./gallery-room-amenities.css);
+@import url(./gallery-room-booking.css);
 *,
 ::before,
 ::after {
@@ -154,7 +155,7 @@ nav#hamburger {
 }
 
 nav#hamburger > .first-stick.active {
-  transform: rotate(-45deg) translate(-2px, 4px);
+  transform: rotate(-45deg) translate(-1px, 3px);
 }
 
 nav#hamburger > .second-stick.active {
@@ -165,7 +166,7 @@ nav#hamburger > .second-stick.active {
 .second-stick,
 .third-stick {
   width: 30px;
-  padding: 2px;
+  height: 1px;
   background-color: var(--black);
   transition: 500ms ease-in-out;
 }

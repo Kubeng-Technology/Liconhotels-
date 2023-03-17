@@ -31,7 +31,7 @@
 .address-head {
   display: flex;
   align-items: end;
-  gap: 5px;
+  gap: 10px;
 }
 
 .address-icon {
@@ -80,7 +80,7 @@
 .facility-head{
   display: flex;
   align-items: end;
-  gap: 5px;
+  gap: 10px;
 }
 
 .facility-icon {
@@ -147,7 +147,7 @@
 .amenities-head{
   display: flex;
   align-items: end;
-  gap: 5px;
+  gap: 10px;
 }
 
 .amenities-icon {

@@ -190,7 +190,7 @@ nav#hamburger {
 }
 
 nav#hamburger > .first-stick.active {
-  transform: rotate(-45deg) translate(-2px, 4px);
+  transform: rotate(-45deg) translate(-1px, 3px);
 }
 
 nav#hamburger > .second-stick.active {
@@ -201,7 +201,7 @@ nav#hamburger > .second-stick.active {
 .second-stick,
 .third-stick {
   width: 30px;
-  padding: 2px;
+  height: 1px;
   background-color: var(--primary-text-light);
   transition: 500ms ease-in-out;
 }
