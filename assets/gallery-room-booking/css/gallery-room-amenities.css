@@ -69,7 +69,7 @@
 }
 
 .address-details, .facility-details, .amenities-details {
-  padding-left: 3%;
+  padding-left: 0%;
 }
 
 .address-details > p {
@@ -133,6 +133,7 @@
 .facility-details > ul > li > p {
   font-size: .85rem;
   width: 90%;
+  color: var(--para-gray-color);
 }
 
 .facility-details > ul > li > i {
@@ -200,6 +201,7 @@
 .amenities-details > ul > li > p {
   font-size: .85rem;
   width: 90%;
+  color: var(--para-gray-color);
 }
 
 .amenities-details > ul > li > i {
