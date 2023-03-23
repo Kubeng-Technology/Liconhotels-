@@ -18,6 +18,8 @@
 .booking-room-heading {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  gap: 25px;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
@@ -30,16 +32,16 @@
   color: var(--black);
 }
 
-.booking-room-type-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
+.booking-room-heading > p {
+  color: var(--para-gray-color);
+  text-align: center;
 }
 
 .standard-room-card {
   width: 100%;
   box-shadow: -1px 1px 1px 0px rgb(128, 128, 128, 0.5), 1px 0px 1px 0px rgb(128, 128, 128, 0.5);
+  padding-bottom: 50px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .standard-room-card-wrapper {
@@ -178,7 +180,7 @@
 .standard-room-details-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 35px;
   padding: 15px;
 }
 
@@ -190,6 +192,7 @@
 .standard-room-details-info {
   display: flex;
   gap: 15px;
+  background-color: var(--primary-text-light);
 }
 
 .standard-room-item {
@@ -199,6 +202,7 @@
   align-items: start;
   justify-content: center;
   width: 33.3%;
+  background-color: var(--primary-text-light);
 }
 
 .standard-room-item > section {
@@ -252,7 +256,100 @@
   font-size: 1.2rem;
 }
 
-.standard-room-link {
+.standard-room-link-wrap {
   color: var(--primary-text-dark);
   text-align: center;
+  width: 100%;
+}
+
+.standard-room-link {
+  padding: 15px 25px;
+  border: 1px solid transparent;
+  background-color: var(--black);
+  color: var(--primary-text-light);
+  transition: .5s ease-in-out;
+}
+
+.standard-room-link:hover {
+  background-color: var(--primary-text-light);
+  border: 1px solid;
+  color: var(--black);
+}
+
+.booking-room-card {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.booking-room-type-card {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease-in-out;
+  position: relative;
+}
+
+#flipcard.active {
+  z-index: 1;
+}
+
+#flipcard {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#flipcard {
+  background-color: var(--black);
+  color: var(--primary-text-light);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 3%;
+}
+
+.flip-more-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#flipcard p {
+  color: var(--para-gray-color);
+  line-height: 1.7;
+}
+
+#flipcard h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#flipcard h2, #flipcard h3 {
+  font-family: var(--title-font);
+}
+
+.flip-back-link {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+#flipcard a {
+  display: block;
+  width: fit-content;
+  padding: 15px 25px;
+  background-color: var(--primary-text-light);
+  color: var(--black);
+  border: 1px solid transparent;
+  transition: .5s ease-in-out;
+}
+
+#flipcard a:hover {
+  color: var(--primary-text-light);
+  background-color: var(--black);
+  border: 1px solid;
 }

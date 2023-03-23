@@ -17,6 +17,7 @@
       crossorigin="anonymous" />
     <script src="./assets/js/main.js" defer></script>
     <script src="./assets/gallery-room-booking/js/hamburger.js" defer></script>
+    <script src="./assets/gallery-room-booking/js/booking-card.js" defer></script>
     <script src="./assets/js/newsletter.js" defer></script>
     <script src="https://kit.fontawesome.com/7ea904bb4e.js" crossorigin="anonymous"></script>
     <title>Gallery</title>
@@ -173,301 +174,499 @@
       <section id="booking-room-type">
         <section class="booking-room-heading">
           <h2>Room Types</h2>
+          <p>There are 100 elegant rooms in Licon Hotel, 22 of which are suites, and our other rooms
+            are at the service of our valued guests with lake and garden views.</p>
         </section>
-        <section class="booking-room-type-card">
-          <section class="standard-room-card">
-            <section class="standard-room-card-wrapper">
-              <figure class='standard-room-image-wrapper'>
-                <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
-              </figure>
-              <section class="standard-room-overlay-info">
-                <section class="offers">
-                  <p class="sales-off">Sale 13% Off</p>
-                  <section>
-                    <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+        <section class="booking-room-card">
+          <section class="booking-room-type-card">
+            <section class="standard-room-card" id="standard-booking">
+              <section class="standard-room-card-wrapper">
+                <figure class='standard-room-image-wrapper'>
+                  <img src="./assets/images/gallery-images/gallery-rooms/room_6.webp" alt="">
+                </figure>
+                <section class="standard-room-overlay-info">
+                  <section class="offers">
+                    <p class="sales-off">Sale 13% Off</p>
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
                     </section>
+                  </section>
+                  <section class="price">
+                    <section class="standard-price">
+                      <p class="earn-cash-reward">$652</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
+                    </section>
+                    <a href="#">BOOK</a>
                   </section>
                 </section>
-                <section class="price">
-                  <section class="standard-price">
-                    <p class="earn-cash-reward">$228</p>
+              </section>
+              <!--overlay layout ends here-->
+              <section class="standard-room-details-wrapper">
+                <section class="standard-room-details-heading">
+                  <h3>Licon Presidential Suite</h3>
+
+                </section>
+                <section class="standard-room-details-info">
+                  <section class="standard-room-item first-item">
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <i class="fa-solid fa-user-group"></i>
                     </section>
+                    <p>5 people</p>
                   </section>
-                  <a href="#">BOOK</a>
+                  <!--standard room item-->
+                  <section class="standard-room-item second-item">
+                    <section>
+                      <i class="fa-solid fa-bed"></i>
+                    </section>
+                    <p>3 King bed</p>
+                  </section>
+                  <!--standard room item-->
+                  <section class="standard-room-item third-item">
+                    <section>
+                      <i class="fa-solid fa-ruler-combined"></i>
+                    </section>
+                    <p>42m² / 452ft</p>
+                  </section>
+                  <!--standard room item-->
+                </section>
+                <!--end layout for details-->
+                <section class="standard-room-link-wrap">
+                  <a href="#flipcard" class="standard-room-link">more details</a>
                 </section>
               </section>
             </section>
-            <!--overlay layout ends here-->
-            <section class="standard-room-details-wrapper">
-              <section class="standard-room-details-heading">
-                <h3>Standard room deluxe</h3>
+            <section id="flipcard" class="flipper">
+              <section class="flip-info">
+                <h2>Licon Presidential Suite</h2>
+                <p>Licon Presidential Suite, the most special room of our hotel, has a width of 80 m
+                  ².
+                  Licon Presidential Suite can accommodate a family of 5 comfortably as it has 1
+                  bedroom and 1 living room.icon
+                </p>
               </section>
-              <section class="standard-room-details-info">
-                <section class="standard-room-item first-item">
-                  <section>
-                    <i class="fa-solid fa-user-group"></i>
-                  </section>
-                  <p>2 people</p>
+              <section class="flip-more-details">
+                <section>
+                  <h3>Food and Drink</h3>
+                  <p>Electric Kettle, Mini Bar, Bottled Water</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item second-item">
-                  <section>
-                    <i class="fa-solid fa-bed"></i>
-                  </section>
-                  <p>1 King bed</p>
+                <section>
+                  <h3>Media and Technology</h3>
+                  <p>Fiber Optic High Speed Internet, RJ 45 Internet Port, Wireless Internet in Your
+                    Room, Telephone, Air Conditioning</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item third-item">
-                  <section>
-                    <i class="fa-solid fa-ruler-combined"></i>
-                  </section>
-                  <p>42m² / 452ft</p>
+                <section>
+                  <h3>Accessibility to Security</h3>
+                  <p>Smoke Alarm in Room, Key Card Operated Door Locks, Audible Smoke Alarms in
+                    Rooms, Security Peephole, Fire Extinguisher, Safe in Room, Emergency Cord in
+                    Bathroom</p>
                 </section>
-                <!--standard room item-->
+                <section>
+                  <h3>Bathroom</h3>
+                  <p>Bathtub or Shower, Toiletries, Hair Dryer, Slippers, Shampoo Conditioner, Body
+                    Soap, Towels</p>
+                </section>
               </section>
-              <!--end layout for details-->
-              <a href="#" class="standard-room-link">more details</a>
+              <section class="flip-back-link">
+                <a href="#standard-booking">Back to booking</a>
+              </section>
             </section>
           </section>
           <!--next card below-->
-          <section class="standard-room-card">
-            <section class="standard-room-card-wrapper">
-              <figure class='standard-room-image-wrapper'>
-                <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
-              </figure>
-              <section class="standard-room-overlay-info">
-                <section class="offers">
-                  <p class="sales-off">Sale 13% Off</p>
-                  <section>
-                    <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+          <section class="booking-room-type-card" id="premium-deluxe">
+            <section class="standard-room-card">
+              <section class="standard-room-card-wrapper">
+                <figure class='standard-room-image-wrapper'>
+                  <img src="./assets/images/gallery-images/gallery-rooms/room_5.webp" alt="">
+                </figure>
+                <section class="standard-room-overlay-info">
+                  <section class="offers">
+                    <p class="sales-off">Sale 13% Off</p>
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
                     </section>
+                  </section>
+                  <section class="price">
+                    <section class="standard-price">
+                      <p class="earn-cash-reward">$500</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
+                    </section>
+                    <a href="#">BOOK</a>
                   </section>
                 </section>
-                <section class="price">
-                  <section class="standard-price">
-                    <p class="earn-cash-reward">$228</p>
+              </section>
+              <!--overlay layout ends here-->
+              <section class="standard-room-details-wrapper">
+                <section class="standard-room-details-heading">
+                  <h3>Premium Deluxe Room</h3>
+                </section>
+                <section class="standard-room-details-info">
+                  <section class="standard-room-item first-item">
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <i class="fa-solid fa-user-group"></i>
                     </section>
+                    <p>2 people</p>
                   </section>
-                  <a href="#">BOOK</a>
+                  <!--standard room item-->
+                  <section class="standard-room-item second-item">
+                    <section>
+                      <i class="fa-solid fa-bed"></i>
+                    </section>
+                    <p>1 King bed</p>
+                  </section>
+                  <!--standard room item-->
+                  <section class="standard-room-item third-item">
+                    <section>
+                      <i class="fa-solid fa-ruler-combined"></i>
+                    </section>
+                    <p>42m² / 452ft</p>
+                  </section>
+                  <!--standard room item-->
+                  <!--standard room item-->
+                </section>
+                <!--end layout for details-->
+                <section class="standard-room-link-wrap">
+                  <a href="#" class="standard-room-link">more details</a>
                 </section>
               </section>
             </section>
-            <!--overlay layout ends here-->
-            <section class="standard-room-details-wrapper">
-              <section class="standard-room-details-heading">
-                <h3>Standard room deluxe</h3>
+            <section id="flipcard" class="flipper">
+              <section class="flip-info">
+                <h2>Licon Presidential Suite</h2>
+                <p>Licon Presidential Suite, the most special room of our hotel, has a width of 80 m
+                  ².
+                  Licon Presidential Suite can accommodate a family of 5 comfortably as it has 1
+                  bedroom and 1 living room.icon
+                </p>
               </section>
-              <section class="standard-room-details-info">
-                <section class="standard-room-item first-item">
-                  <section>
-                    <i class="fa-solid fa-user-group"></i>
-                  </section>
-                  <p>2 people</p>
+              <section class="flip-more-details">
+                <section>
+                  <h3>Food and Drink</h3>
+                  <p>Electric Kettle, Mini Bar, Bottled Water</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item second-item">
-                  <section>
-                    <i class="fa-solid fa-bed"></i>
-                  </section>
-                  <p>1 King bed</p>
+                <section>
+                  <h3>Media and Technology</h3>
+                  <p>Fiber Optic High Speed Internet, RJ 45 Internet Port, Wireless Internet in Your
+                    Room, Telephone, Air Conditioning</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item third-item">
-                  <section>
-                    <i class="fa-solid fa-ruler-combined"></i>
-                  </section>
-                  <p>42m² / 452ft</p>
+                <section>
+                  <h3>Accessibility to Security</h3>
+                  <p>Smoke Alarm in Room, Key Card Operated Door Locks, Audible Smoke Alarms in
+                    Rooms, Security Peephole, Fire Extinguisher, Safe in Room, Emergency Cord in
+                    Bathroom</p>
                 </section>
-                <!--standard room item-->
-                <!--standard room item-->
-              </section>
-              <!--end layout for details-->
-              <a href="#" class="standard-room-link">more details</a>
-            </section>
-          </section>
-          <!--next card goes below-->
-          <section class="standard-room-card">
-            <section class="standard-room-card-wrapper">
-              <figure class='standard-room-image-wrapper'>
-                <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
-              </figure>
-              <section class="standard-room-overlay-info">
-                <section class="offers">
-                  <p class="sales-off">Sale 13% Off</p>
-                  <section>
-                    <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
-                    <section>
-                      <i class="fa-solid fa-info"></i>
-                    </section>
-                  </section>
-                </section>
-                <section class="price">
-                  <section class="standard-price">
-                    <p class="earn-cash-reward">$228</p>
-                    <section>
-                      <i class="fa-solid fa-info"></i>
-                    </section>
-                  </section>
-                  <a href="#">BOOK</a>
+                <section>
+                  <h3>Bathroom</h3>
+                  <p>Bathtub or Shower, Toiletries, Hair Dryer, Slippers, Shampoo Conditioner, Body
+                    Soap, Towels</p>
                 </section>
               </section>
-            </section>
-            <!--overlay layout ends here-->
-            <section class="standard-room-details-wrapper">
-              <section class="standard-room-details-heading">
-                <h3>Standard room deluxe</h3>
+              <section class="flip-back-link">
+                <a href="#premium-deluxe">Back to booking</a>
               </section>
-              <section class="standard-room-details-info">
-                <section class="standard-room-item first-item">
-                  <section>
-                    <i class="fa-solid fa-user-group"></i>
-                  </section>
-                  <p>2 people</p>
-                </section>
-                <!--standard room item-->
-                <section class="standard-room-item second-item">
-                  <section>
-                    <i class="fa-solid fa-bed"></i>
-                  </section>
-                  <p>1 King bed</p>
-                </section>
-                <!--standard room item-->
-                <section class="standard-room-item third-item">
-                  <section>
-                    <i class="fa-solid fa-ruler-combined"></i>
-                  </section>
-                  <p>42m² / 452ft</p>
-                </section>
-                <!--standard room item-->
-              </section>
-              <!--end layout for details-->
-              <a href="#" class="standard-room-link">more details</a>
             </section>
           </section>
           <!--next card goes below-->
-          <section class="standard-room-card">
-            <section class="standard-room-card-wrapper">
-              <figure class='standard-room-image-wrapper'>
-                <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
-              </figure>
-              <section class="standard-room-overlay-info">
-                <section class="offers">
-                  <p class="sales-off">Sale 13% Off</p>
-                  <section>
-                    <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+          <section class="booking-room-type-card" id="deluxe">
+            <section class="standard-room-card">
+              <section class="standard-room-card-wrapper">
+                <figure class='standard-room-image-wrapper'>
+                  <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
+                </figure>
+                <section class="standard-room-overlay-info">
+                  <section class="offers">
+                    <p class="sales-off">Sale 13% Off</p>
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
                     </section>
+                  </section>
+                  <section class="price">
+                    <section class="standard-price">
+                      <p class="earn-cash-reward">$328</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
+                    </section>
+                    <a href="#">BOOK</a>
                   </section>
                 </section>
-                <section class="price">
-                  <section class="standard-price">
-                    <p class="earn-cash-reward">$228</p>
+              </section>
+              <!--overlay layout ends here-->
+              <section class="standard-room-details-wrapper">
+                <section class="standard-room-details-heading">
+                  <h3>Deluxe Suite</h3>
+                </section>
+                <section class="standard-room-details-info">
+                  <section class="standard-room-item first-item">
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <i class="fa-solid fa-user-group"></i>
                     </section>
+                    <p>5 people</p>
                   </section>
-                  <a href="#">BOOK</a>
+                  <!--standard room item-->
+                  <section class="standard-room-item second-item">
+                    <section>
+                      <i class="fa-solid fa-bed"></i>
+                    </section>
+                    <p>3 King bed</p>
+                  </section>
+                  <!--standard room item-->
+                  <section class="standard-room-item third-item">
+                    <section>
+                      <i class="fa-solid fa-ruler-combined"></i>
+                    </section>
+                    <p>42m² / 452ft</p>
+                  </section>
+                  <!--standard room item-->
+                </section>
+                <!--end layout for details-->
+                <section class="standard-room-link-wrap">
+                  <a href="#" class="standard-room-link">more details</a>
                 </section>
               </section>
             </section>
-            <!--overlay layout ends here-->
-            <section class="standard-room-details-wrapper">
-              <section class="standard-room-details-heading">
-                <h3>Standard room deluxe</h3>
+            <section id="flipcard" class="flipper">
+              <section class="flip-info">
+                <h2>Licon Presidential Suite</h2>
+                <p>Licon Presidential Suite, the most special room of our hotel, has a width of 80 m
+                  ².
+                  Licon Presidential Suite can accommodate a family of 5 comfortably as it has 1
+                  bedroom and 1 living room.icon
+                </p>
               </section>
-              <section class="standard-room-details-info">
-                <section class="standard-room-item first-item">
-                  <section>
-                    <i class="fa-solid fa-user-group"></i>
-                  </section>
-                  <p>2 people</p>
+              <section class="flip-more-details">
+                <section>
+                  <h3>Food and Drink</h3>
+                  <p>Electric Kettle, Mini Bar, Bottled Water</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item second-item">
-                  <section>
-                    <i class="fa-solid fa-bed"></i>
-                  </section>
-                  <p>1 King bed</p>
+                <section>
+                  <h3>Media and Technology</h3>
+                  <p>Fiber Optic High Speed Internet, RJ 45 Internet Port, Wireless Internet in Your
+                    Room, Telephone, Air Conditioning</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item third-item">
-                  <section>
-                    <i class="fa-solid fa-ruler-combined"></i>
-                  </section>
-                  <p>42m² / 452ft</p>
+                <section>
+                  <h3>Accessibility to Security</h3>
+                  <p>Smoke Alarm in Room, Key Card Operated Door Locks, Audible Smoke Alarms in
+                    Rooms, Security Peephole, Fire Extinguisher, Safe in Room, Emergency Cord in
+                    Bathroom</p>
                 </section>
-                <!--standard room item-->
+                <section>
+                  <h3>Bathroom</h3>
+                  <p>Bathtub or Shower, Toiletries, Hair Dryer, Slippers, Shampoo Conditioner, Body
+                    Soap, Towels</p>
+                </section>
               </section>
-              <!--end layout for details-->
-              <a href="#" class="standard-room-link">more details</a>
+              <section class="flip-back-link">
+                <a href="#deluxe">Back to booking</a>
+              </section>
             </section>
           </section>
           <!--next card goes below-->
-          <section class="standard-room-card">
-            <section class="standard-room-card-wrapper">
-              <figure class='standard-room-image-wrapper'>
-                <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
-              </figure>
-              <section class="standard-room-overlay-info">
-                <section class="offers">
-                  <p class="sales-off">Sale 13% Off</p>
-                  <section>
-                    <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+          <section class="booking-room-type-card" id="junior">
+            <section class="standard-room-card">
+              <section class="standard-room-card-wrapper">
+                <figure class='standard-room-image-wrapper'>
+                  <img src="./assets/images/gallery-images/gallery-rooms/room_1.webp" alt="">
+                </figure>
+                <section class="standard-room-overlay-info">
+                  <section class="offers">
+                    <p class="sales-off">Sale 13% Off</p>
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
                     </section>
+                  </section>
+                  <section class="price">
+                    <section class="standard-price">
+                      <p class="earn-cash-reward">$228</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
+                    </section>
+                    <a href="#">BOOK</a>
                   </section>
                 </section>
-                <section class="price">
-                  <section class="standard-price">
-                    <p class="earn-cash-reward">$228</p>
+              </section>
+              <!--overlay layout ends here-->
+              <section class="standard-room-details-wrapper">
+                <section class="standard-room-details-heading">
+                  <h3>Junior Suite</h3>
+                </section>
+                <section class="standard-room-details-info">
+                  <section class="standard-room-item first-item">
                     <section>
-                      <i class="fa-solid fa-info"></i>
+                      <i class="fa-solid fa-user-group"></i>
                     </section>
+                    <p>1 people</p>
                   </section>
-                  <a href="#">BOOK</a>
+                  <!--standard room item-->
+                  <section class="standard-room-item second-item">
+                    <section>
+                      <i class="fa-solid fa-bed"></i>
+                    </section>
+                    <p>1 King bed</p>
+                  </section>
+                  <!--standard room item-->
+                  <section class="standard-room-item third-item">
+                    <section>
+                      <i class="fa-solid fa-ruler-combined"></i>
+                    </section>
+                    <p>42m² / 452ft</p>
+                  </section>
+                  <!--standard room item-->
+                </section>
+                <!--end layout for details-->
+                <section class="standard-room-link-wrap">
+                  <a href="#" class="standard-room-link">more details</a>
                 </section>
               </section>
             </section>
-            <!--overlay layout ends here-->
-            <section class="standard-room-details-wrapper">
-              <section class="standard-room-details-heading">
-                <h3>Standard room deluxe</h3>
+            <section id="flipcard" class="flipper">
+              <section class="flip-info">
+                <h2>Licon Presidential Suite</h2>
+                <p>Licon Presidential Suite, the most special room of our hotel, has a width of 80 m
+                  ².
+                  Licon Presidential Suite can accommodate a family of 5 comfortably as it has 1
+                  bedroom and 1 living room.icon
+                </p>
               </section>
-              <section class="standard-room-details-info">
-                <section class="standard-room-item first-item">
-                  <section>
-                    <i class="fa-solid fa-user-group"></i>
-                  </section>
-                  <p>2 people</p>
+              <section class="flip-more-details">
+                <section>
+                  <h3>Food and Drink</h3>
+                  <p>Electric Kettle, Mini Bar, Bottled Water</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item second-item">
-                  <section>
-                    <i class="fa-solid fa-bed"></i>
-                  </section>
-                  <p>1 King bed</p>
+                <section>
+                  <h3>Media and Technology</h3>
+                  <p>Fiber Optic High Speed Internet, RJ 45 Internet Port, Wireless Internet in Your
+                    Room, Telephone, Air Conditioning</p>
                 </section>
-                <!--standard room item-->
-                <section class="standard-room-item third-item">
-                  <section>
-                    <i class="fa-solid fa-ruler-combined"></i>
-                  </section>
-                  <p>42m² / 452ft</p>
+                <section>
+                  <h3>Accessibility to Security</h3>
+                  <p>Smoke Alarm in Room, Key Card Operated Door Locks, Audible Smoke Alarms in
+                    Rooms, Security Peephole, Fire Extinguisher, Safe in Room, Emergency Cord in
+                    Bathroom</p>
                 </section>
-                <!--standard room item-->
+                <section>
+                  <h3>Bathroom</h3>
+                  <p>Bathtub or Shower, Toiletries, Hair Dryer, Slippers, Shampoo Conditioner, Body
+                    Soap, Towels</p>
+                </section>
               </section>
-              <!--end layout for details-->
-              <a href="#" class="standard-room-link">more details</a>
+              <section class="flip-back-link">
+                <a href="#junior">Back to booking</a>
+              </section>
+            </section>
+          </section>
+          <!--next card goes below-->
+          <section class="booking-room-type-card" id="standard-room-deluxe">
+            <section class="standard-room-card">
+              <section class="standard-room-card-wrapper">
+                <figure class='standard-room-image-wrapper'>
+                  <img src="./assets/gallery-room-booking/image/licon-entrance.webp" alt="">
+                </figure>
+                <section class="standard-room-overlay-info">
+                  <section class="offers">
+                    <p class="sales-off">Sale 13% Off</p>
+                    <section>
+                      <p class="earn-cash-reward">EARN 15% CASH REWARDS</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
+                    </section>
+                  </section>
+                  <section class="price">
+                    <section class="standard-price">
+                      <p class="earn-cash-reward">$228</p>
+                      <section>
+                        <i class="fa-solid fa-info"></i>
+                      </section>
+                    </section>
+                    <a href="#">BOOK</a>
+                  </section>
+                </section>
+              </section>
+              <!--overlay layout ends here-->
+              <section class="standard-room-details-wrapper">
+                <section class="standard-room-details-heading">
+                  <h3>Standard room deluxe</h3>
+                </section>
+                <section class="standard-room-details-info">
+                  <section class="standard-room-item first-item">
+                    <section>
+                      <i class="fa-solid fa-user-group"></i>
+                    </section>
+                    <p>2 people</p>
+                  </section>
+                  <!--standard room item-->
+                  <section class="standard-room-item second-item">
+                    <section>
+                      <i class="fa-solid fa-bed"></i>
+                    </section>
+                    <p>2 King bed</p>
+                  </section>
+                  <!--standard room item-->
+                  <section class="standard-room-item third-item">
+                    <section>
+                      <i class="fa-solid fa-ruler-combined"></i>
+                    </section>
+                    <p>42m² / 452ft</p>
+                  </section>
+                  <!--standard room item-->
+                </section>
+                <!--end layout for details-->
+                <section class="standard-room-link-wrap">
+                  <a href="#" class="standard-room-link">more details</a>
+                </section>
+              </section>
+            </section>
+            <section id="flipcard" class="flipper">
+              <section class="flip-info">
+                <h2>Licon Presidential Suite</h2>
+                <p>Licon Presidential Suite, the most special room of our hotel, has a width of 80 m
+                  ².
+                  Licon Presidential Suite can accommodate a family of 5 comfortably as it has 1
+                  bedroom and 1 living room.icon
+                </p>
+              </section>
+              <section class="flip-more-details">
+                <section>
+                  <h3>Food and Drink</h3>
+                  <p>Electric Kettle, Mini Bar, Bottled Water</p>
+                </section>
+                <section>
+                  <h3>Media and Technology</h3>
+                  <p>Fiber Optic High Speed Internet, RJ 45 Internet Port, Wireless Internet in Your
+                    Room, Telephone, Air Conditioning</p>
+                </section>
+                <section>
+                  <h3>Accessibility to Security</h3>
+                  <p>Smoke Alarm in Room, Key Card Operated Door Locks, Audible Smoke Alarms in
+                    Rooms, Security Peephole, Fire Extinguisher, Safe in Room, Emergency Cord in
+                    Bathroom</p>
+                </section>
+                <section>
+                  <h3>Bathroom</h3>
+                  <p>Bathtub or Shower, Toiletries, Hair Dryer, Slippers, Shampoo Conditioner, Body
+                    Soap, Towels</p>
+                </section>
+              </section>
+              <section class="flip-back-link">
+                <a href="#standard-room-deluxe">Back to booking</a>
+              </section>
             </section>
           </section>
           <!--next card goes below-->
