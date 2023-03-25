@@ -320,10 +320,11 @@
 #flipcard p {
   color: var(--para-gray-color);
   line-height: 1.7;
+  font-size: .85rem;
 }
 
 #flipcard h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 15px;
 }
