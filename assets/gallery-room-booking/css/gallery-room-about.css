@@ -94,6 +94,7 @@ section.licon-logo-and-name > a:hover {
 	transition: .5s ease-in-out;
 	position: fixed;
 	bottom: 0px;
+	z-index: 1;
 }
 
 .licon-reservation-box > section {
@@ -110,6 +111,7 @@ section.licon-logo-and-name > a:hover {
 	transition: .5s ease-in-out;
 	position: fixed;
 	bottom: 0px;
+	z-index: 1;
 }
 
 .licon-reservation-box > a:hover, .licon-reservation-box > section:hover {
